@@ -1,0 +1,40 @@
+{
+    "description": {
+        "type": "/type/text",
+        "value": "Chad Newsome has gone to Paris. He is charmed by Old World fascinations and caught up in the leisurely craft and bohemian direction of European worldliness. An older woman of rank and adventurous but subtle skill, Madame de Vionnet, strokes his ego and does her best to keep Chad in Paris indefinitely. Chad's mother lives in Woollett, Mass., and wants her son to return to run the family business. Mrs. Newsome is an invalid and cannot go to Paris to fetch her son herself, so she employs Lambert Strether and Sarah Pocock to return Chad to Massachusetts. Sarah has been to Paris before and is aware of its attractiveness, so her determination to succeed in this task is fixed and uncompromising. Strether is of later middle age, however, and inspired by the fairytale of a beautiful life in Europe. Mrs. Newsome has promised to marry Strether if he can bring Chad home. Strether is completely enamored by the Parisian character and its enchantments and has a difficult time completing his mission. The drama of reestablishing Chad in business in America and of coming to terms with the mythological romance of France leaves the reader unbalanced, trying to recover equilibrium in the real world. Those involved with Chad's rescue are compelled to recognize the deep intimacies of personal attachment and the accepted proprieties of direct consequence. The success and failures of such an undertaking are unpredictable. The result of every character's attempt to steer Chad rightly is a strange conglomeration of role reversal, fantasy, and truth."
+    },
+    "title": "The ambassadors",
+    "covers": [313610, 8235309, 5734952],
+    "subject_places": ["France", "Paris (France)", "Paris"],
+    "first_publish_date": "June 1957",
+    "subject_people": ["Henry James (1843-1916)"],
+    "key": "/works/OL276470W",
+    "authors": [{ "type": { "key": "/type/author_role" }, "author": { "key": "/authors/OL21001A" } }],
+    "type": { "key": "/type/work" },
+    "subjects": [
+        "Man-woman relationships",
+        "Fiction",
+        "Romance",
+        "Americans",
+        "Historical Fiction",
+        "Young men",
+        "Classic Literature",
+        "Ambassadors (James, Henry)",
+        "James, henry, 1843-1916",
+        "American fiction (fictional works by one author)",
+        "Paris (france), fiction",
+        "Man-woman relationships, fiction",
+        "Fiction, psychological",
+        "American fiction",
+        "LITERARY CRITICISM",
+        "American",
+        "General",
+        "Character",
+        "Social life and customs",
+        "Manners and customs"
+    ],
+    "latest_revision": 23,
+    "revision": 23,
+    "created": { "type": "/type/datetime", "value": "2009-10-25T09:41:27.933522" },
+    "last_modified": { "type": "/type/datetime", "value": "2021-12-24T10:57:45.270701" }
+}
