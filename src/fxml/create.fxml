@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.controllers.CreateController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.controllers.CreateController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="254.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.0" minWidth="10.0" prefWidth="280.0" />
@@ -22,11 +22,11 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label fx:id="openLibraryIDLabel" text="Open Library ID" GridPane.halignment="CENTER">
+      <Label text="Open Library ID" GridPane.halignment="CENTER">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="dictionaryIDLabel" text="Dictionary ID" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <Label text="Dictionary ID" GridPane.halignment="CENTER" GridPane.rowIndex="1">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
@@ -38,11 +38,11 @@
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></TextField>
-      <Button fx:id="createButton" mnemonicParsing="false" onAction="#createDictionary" text="Create" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+      <Button mnemonicParsing="false" onAction="#createDictionary" text="Create" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Button>
-      <Label fx:id="errorMessageLabel" textFill="RED" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+      <Label fx:id="messageLabel" textFill="RED" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
          <font>
             <Font name="Monospaced Bold" size="13.0" />
          </font>

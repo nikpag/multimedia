@@ -2,38 +2,35 @@ package src.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.layout.GridPane;
 
+/**
+ * This controller is used by the "Dictionary" pop-up window that is opened when
+ * the user selects Details-->Dictionary from the menu.
+ */
 public class DictionaryController implements Controller {
+    /**
+     * This function is called when the "Dictionary" pop-up window is created. It
+     * renders the dictionary stats on the screen.
+     */
     @FXML
-    private GridPane gridPane;
-    @FXML
-    private Label words6Label;
-    @FXML
-    private Label words6Number;
-    @FXML
-    private Label words7To9Label;
-    @FXML
-    private Label words7To9Number;
-    @FXML
-    private Label words10PlusLabel;
-    @FXML
-    private Label words10PlusNumber;
-    @FXML
-    private MainController mainController;
+    public void renderDictionaryUI() {
+        words6Number.setText(String.valueOf(mainController.getActiveDictionary().getNumberOfLength6()));
+        words7To9Number.setText(String.valueOf(mainController.getActiveDictionary().getNumberOfLength7To9()));
+        words10PlusNumber.setText(String.valueOf(mainController.getActiveDictionary().getNumberOfLength10Plus()));
+    }
 
-    /* Empty */
+    /* Refer to the Controller interface for more details on this function. */
     public void setMainController(Controller controller) {
         mainController = (MainController) controller;
     }
 
-    public void refreshDictionaryUI() {
-        System.out.println(mainController);
-        System.out.println(mainController.activeDictionary);
-        System.out.println(mainController.activeDictionary.words6);
-        words6Number.setText(String.valueOf(mainController.activeDictionary.words6));
-        System.out.println(words7To9Number);
-        words7To9Number.setText(String.valueOf(mainController.activeDictionary.words7To9));
-        words10PlusNumber.setText(String.valueOf(mainController.activeDictionary.words10Plus));
-    }
+    @FXML
+    private Label words6Number; /* A label holding the number of 6-letter words in the active dictionary */
+    @FXML
+    private Label words7To9Number; /* A label holding the number of 7-to-9-letter words in the active dictionary */
+    @FXML
+    private Label words10PlusNumber; /* A label holding the number of 10-or-more-letter words in the active dictionary */
+
+    private MainController mainController; /* The controller of the main window (used for communication between windows) */
+
 }

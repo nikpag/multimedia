@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1026.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.controllers.MainController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1026.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.controllers.MainController">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="59.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="317.0" />
@@ -36,51 +36,51 @@
       <RowConstraints maxHeight="429.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <MenuBar fx:id="menuBar" GridPane.columnSpan="2147483647">
+      <MenuBar GridPane.columnSpan="2147483647">
         <menus>
-          <Menu fx:id="applicationMenu" mnemonicParsing="false" text="Application">
+          <Menu mnemonicParsing="false" text="Application">
             <items>
-              <MenuItem fx:id="startMenuItem" mnemonicParsing="false" onAction="#handleStart" text="Start" />
-                  <MenuItem fx:id="loadMenuItem" mnemonicParsing="false" onAction="#handleLoad" text="Load" />
-                  <MenuItem fx:id="createMenuItem" mnemonicParsing="false" onAction="#handleCreate" text="Create" />
-                  <MenuItem fx:id="exitMenuItem" mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+              <MenuItem mnemonicParsing="false" onAction="#handleStart" text="Start" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleLoad" text="Load" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleCreate" text="Create" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Exit" />
             </items>
           </Menu>
-          <Menu fx:id="detailsMenu" mnemonicParsing="false" text="Details">
+          <Menu mnemonicParsing="false" text="Details">
             <items>
-              <MenuItem fx:id="dictionaryMenuItem" mnemonicParsing="false" onAction="#handleDictionary" text="Dictionary" />
-                  <MenuItem fx:id="roundsMenuItem" mnemonicParsing="false" onAction="#handleRounds" text="Rounds" />
-                  <MenuItem fx:id="solutionMenuItem" mnemonicParsing="false" onAction="#handleSolution" text="Solution" />
+              <MenuItem mnemonicParsing="false" onAction="#handleDictionary" text="Dictionary" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleRounds" text="Rounds" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSolution" text="Solution" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
-      <Label fx:id="availableWordsTextLabel" text="Available words in active dictionary:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <Label text="Available words in active dictionary:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="availableWordsNumberLabel" text="xx" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <Label fx:id="availableWordsNumberLabel" text="---" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="totalPointsTextLabel" text="Total points in current game:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+      <Label text="Total points in current game:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="totalPointsNumberLabel" text="xx" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+      <Label fx:id="totalPointsNumberLabel" text="---" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="correctChoicesTextLabel" text="Correct choices in current game:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+      <Label text="Correct choices in current game:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="correctChoicesNumberLabel" text="xx" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+      <Label fx:id="correctChoicesNumberLabel" text="---" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
       <ImageView fx:id="hangmanImageView" fitHeight="299.0" fitWidth="374.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-      <ScrollPane fx:id="wordScrollPane" hbarPolicy="ALWAYS" prefHeight="134.0" prefWidth="462.0" vbarPolicy="NEVER" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5">
+      <ScrollPane hbarPolicy="ALWAYS" prefHeight="134.0" prefWidth="462.0" vbarPolicy="NEVER" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5">
          <content>
             <Label fx:id="wordLabel" text="Select Application/Load to load a dictionary,&#10;then Application/Start to start a new game">
                <padding>
@@ -91,7 +91,7 @@
                </font>
             </Label>
          </content></ScrollPane>
-      <ScrollPane fx:id="availableLettersScrollPane" hbarPolicy="ALWAYS" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" GridPane.columnIndex="5" GridPane.rowIndex="4" GridPane.rowSpan="2">
+      <ScrollPane hbarPolicy="ALWAYS" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" GridPane.columnIndex="5" GridPane.rowIndex="4" GridPane.rowSpan="2">
          <content>
             <Label fx:id="availableLettersLabel">
                <padding>
@@ -102,17 +102,17 @@
                </font>
             </Label>
          </content></ScrollPane>
-      <Label fx:id="letterTextLabel" text="Letter" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+      <Label text="Letter" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
       <ComboBox fx:id="letterChoiceComboBox" prefWidth="150.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
-      <Label fx:id="positionTextLabel" text="Position" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+      <Label text="Position" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
       <ComboBox fx:id="positionChoiceComboBox" prefWidth="150.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
-      <Button fx:id="submitChoiceButton" mnemonicParsing="false" onAction="#handleSubmit" text="Submit choice" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+      <Button mnemonicParsing="false" onAction="#handleSubmit" text="Submit choice" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Button>

@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.controllers.DictionaryController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.controllers.DictionaryController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -17,27 +17,27 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label fx:id="words6Label" text="Words with 6 letters:" GridPane.halignment="CENTER">
+      <Label text="Words with 6 letters:" GridPane.halignment="CENTER">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="words6Number" text="xx" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+      <Label fx:id="words6Number" text="---" GridPane.columnIndex="1" GridPane.halignment="CENTER">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="words7To9Label" text="Words with 7-9 letters:" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <Label text="Words with 7-9 letters:" GridPane.halignment="CENTER" GridPane.rowIndex="1">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="words7To9Number" text="xx" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <Label fx:id="words7To9Number" text="---" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="words10PlusLabel" text="Words with 10+ letters:" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+      <Label text="Words with 10+ letters:" GridPane.halignment="CENTER" GridPane.rowIndex="2">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
-      <Label fx:id="words10PlusNumber" text="xx" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+      <Label fx:id="words10PlusNumber" text="---" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
          <font>
             <Font name="Monospaced Regular" size="13.0" />
          </font></Label>
